@@ -1,0 +1,17 @@
+.campoButton{
+    width: 100px;
+    height: 100px;
+    box-shadow: 15%;
+    background-color: beige;
+    border-radius: 15%;
+    margin-top: 10px;
+}
+
+.campoButton:hover{
+    background-color: aliceblue;
+}
+
+.desc{
+    margin-left: 4%;
+    display: inline-block;
+}
