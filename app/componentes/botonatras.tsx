@@ -1,16 +1,26 @@
+'use client'
 import { useRouter } from "next/navigation";
 import "../styles/botonAtras.css"
 
-export default function Botonatras(){
-
-const router = useRouter();
-const caracter = '<';
-function goBack() {
-router.push('./');    
+interface propOpcional {
+    path?: string;
 }
 
-    return(
-   <button className='atrasButton'
-    onClick={goBack}>{caracter}</button>   
+export default function Botonatras({ path }: propOpcional) {
+    const router = useRouter();
+    const caracter = '<';
+
+    function goBack() {
+        if (!path) {
+            router.back(); 
+        } else {
+            router.push(path); 
+        }
+    }
+
+    return (
+        <button className='atrasButton' onClick={goBack}>
+            {caracter}
+        </button>
     );
-};
+}

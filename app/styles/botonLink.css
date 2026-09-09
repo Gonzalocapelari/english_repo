@@ -1,0 +1,13 @@
+.botonLink{
+    color: rgb(78, 78, 210);
+    transition: color 0.1s ease-in; 
+    /* border: 1px solid transparent;
+    border-radius: 50%;
+    transition: border 1s; */
+    transition: background-color 0,3 ease;
+}
+.botonLink:hover{
+     color: rgb(7, 7, 77);
+     background-color: rgba(137, 43, 226, 0.28);
+    /* border: 1px solid rgba(255, 0, 0, 0.995); */
+}

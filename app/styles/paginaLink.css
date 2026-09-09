@@ -1,0 +1,40 @@
+main {
+  min-height: 100vh; 
+}
+.granContenedor{
+  display: flex;
+  gap: 15px;
+  padding: 25px;
+  align-items: center;
+}
+
+.contenedor2{
+width: 45%
+
+}
+.contenidoTeoria {
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  min-height: 80vh;
+  background-color: #4CAF50;
+  width: 50%;
+}
+.anotaciones{
+  margin-top: 5;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  min-height: 250px;
+  background-color: #707d88;
+  border: 1px solid black;
+}
+.ejercicioComplementario {
+  margin-top: 5;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  min-height: 180px;
+  background-color: #2196F3;
+  border: 1px solid black;
+}

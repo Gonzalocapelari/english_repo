@@ -2,29 +2,65 @@
 "use client";
 import Campo from "@/app/componentes/campo";
 import Botonatras from "@/app/componentes/botonatras";
+import "../styles/teoria.css"
 
 export default function Teoria() {
-var desc = [];
+  // Estructuramos todos los datos en un arreglo de objetos
+  const datosCampos = [
+    {
+      recurso: "Nivel 1",
+      descripcion: "Primeros pasos en el idioma. Bases para presentarse, nombrar objetos cotidianos y formar las primeras oraciones simples.",
+      nomlink1: "Verbo To Be", dirlink1: "/teoria/nivel1/link1",
+      nomlink2: "Saludos", dirlink2: "/teoria/nivel1/saludos",
+      // Puedes agregar nomlink3, dirlink3, hasta el 5 según necesites
+    },
+    {
+      recurso: "Nivel 2 (A1)",
+      descripcion: "Construcción de rutinas y preferencias. Estructuras para hablar del día a día, expresar lo que te gusta y hacer preguntas básicas.",
+      nomlink1: "Presente Simple", dirlink1: "/teoria/nivel2/presente",
+      nomlink2: "Rutinas", dirlink2: "/teoria/nivel2/rutinas",
+    },
+    {
+      recurso: "Nivel 3 (A1+)",
+      descripcion: "Experiencias y planes. Herramientas para contar lo que hiciste en el pasado, comparar cosas y hablar de proyectos a futuro.",
+      nomlink1: "Pasado Simple", dirlink1: "/teoria/nivel3/pasado",
+      nomlink2: "Futuro", dirlink2: "/teoria/nivel3/futuro",
+    },
+    {
+      recurso: "Nivel 4 (A1/A2)",
+      descripcion: "Ampliación de acciones. Diferenciación entre lo que ocurre ahora y lo habitual, junto con descripciones detalladas de acciones pasadas.",
+      nomlink1: "Presente Continuo", dirlink1: "/teoria/nivel4/presente-continuo",
+    },
+    {
+      recurso: "Nivel 5 (A2/B1)",
+      descripcion: "Conexión de tiempos y condiciones. Uso de tiempos compuestos, situaciones condicionales reales y verbos para dar consejos u obligaciones.",
+      nomlink1: "Condicional 1", dirlink1: "/teoria/nivel5/condicional1",
+    },
+    {
+      recurso: "Nivel 6 (B1)",
+      descripcion: "Situaciones hipotéticas y transmisión de mensajes. Estructuras para imaginar escenarios irreales y reportar lo que dijeron otras personas.",
+      nomlink1: "Reported Speech", dirlink1: "/teoria/nivel6/reported-speech",
+    },
+    {
+      recurso: "Nivel 7 (B2)",
+      descripcion: "Fluidez y estructuras complejas. Gramática avanzada para analizar eventos del pasado que no ocurrieron y conectar ideas de forma precisa.",
+      nomlink1: "Tiempos Perfectos", dirlink1: "/teoria/nivel7/perfectos",
+    }
+  ];
 
-function setDescripcion() {
-    desc[0] = "nivel 1: Contenido basico como verbo to be, can/can't, etc";
-    desc[1] = "nivel 2:";
-    desc[2] = "nivel 3:";
-    desc[3] = "nivel 4:";
-    desc[4] = "nivel 5:";
-    desc[5] = "nivel 6:";
-
-}
-setDescripcion();
-    return(
-    <ul>
-        <li><Campo recurso="1" descripcion={desc[0]}/></li>
-        <li><Campo recurso="2" descripcion={desc[1]}/></li>
-        <li><Campo recurso="3" descripcion={desc[2]}/></li>
-        <li><Campo recurso="4" descripcion={desc[3]}/></li>
-        <li><Campo recurso="5" descripcion={desc[4]}/></li>
-        <li><Campo recurso="6" descripcion={desc[5]}/></li>
-        <li><Botonatras/></li>    </ul>
-    
-    )
+  return (
+    <main className="mainteoria">
+    <ul className="ulCampos">
+      {/* Recorremos el arreglo y pasamos todas las propiedades juntas con ...campo */}
+      {datosCampos.map((campo, index) => (
+        <li key={index}>
+          <Campo {...campo} />
+        </li>
+      ))}
+      <li>
+        <Botonatras />
+      </li>
+    </ul>
+    </main>
+  );
 }

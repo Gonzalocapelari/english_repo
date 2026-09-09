@@ -1,17 +1,48 @@
 .campoButton{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 70px;
     box-shadow: 15%;
-    background-color: beige;
+    background-color: rgba(137, 43, 226, 0.28);
     border-radius: 15%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    /* font-size: 5%; */
+margin-left: 5%;
 }
 
 .campoButton:hover{
-    background-color: aliceblue;
+    background-color: rgba(163, 90, 233, 0.28);
+}
+.paquete{
+    transition: background-color 1s ease;
+    z-index: -10;
+    margin-top: 10px;
+    
+}
+.paquete:hover{
+    background-color: rgba(221, 127, 255, 0.137);
+}
+.desc{
+    margin-left: 2%;
+    display: inline-block;
+    color:blue;
+    font-size: bold;
+}
+.claseLista {
+margin-left: 15%;
+animation: claseLista 1.8s;
+/* color: rgb(87, 53, 223); */
+
 }
 
-.desc{
-    margin-left: 4%;
-    display: inline-block;
+@keyframes claseLista {
+    from{
+opacity: 0%;
+    }
+    50% {
+opacity: 80%
+    }
+    to {
+opacity: 100%;
+    }
+    
 }
