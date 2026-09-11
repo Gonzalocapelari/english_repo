@@ -13,19 +13,22 @@ margin-left: 5%;
     background-color: rgba(163, 90, 233, 0.28);
 }
 .paquete{
-    transition: background-color 1s ease;
+    transition: background-color 0.8 ease-in-out;
     z-index: -10;
     margin-top: 10px;
     
 }
 .paquete:hover{
-    background-color: rgba(221, 127, 255, 0.137);
+    background-color: rgba(137, 43, 226, 0.28);
 }
 .desc{
-    margin-left: 2%;
+    margin-left: 0.7%;
     display: inline-block;
-    color:blue;
-    font-size: bold;
+    color:rgb(159, 105, 173);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    font-size:large;
+/*     font-style:normal; */
 }
 .claseLista {
 margin-left: 15%;
