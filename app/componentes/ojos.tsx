@@ -5,10 +5,10 @@ import { useState, useEffect, useRef } from 'react';
 import "../styles/ojos.css"
 export default function Ojos() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const globoRef = useRef(null); // Referencia para saber dónde está el ojo en la pantalla
+  const globoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
+    const handleMouseMove = (event: MouseEvent) => {
       setMousePosition({
         x: event.clientX,
         y: event.clientY
