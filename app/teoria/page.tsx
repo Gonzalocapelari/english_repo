@@ -10,8 +10,11 @@ export default function Teoria() {
     {
       recurso: "Nivel 1",
       descripcion: "Bases para presentarse, nombrar objetos cotidianos y formar las primeras oraciones simples",
-      nomlink1: "Verbo To Be", dirlink1: "/teoria/nivel1/link1",
+      nomlink1: "Verbo To Be", dirlink1: "/teoria/nivel1/verbotobe",
       nomlink2: "Saludos", dirlink2: "/teoria/nivel1/saludos",
+      nomlink3: "presente simple", dirlink3: "/teoria/nivel1/presentesimple",
+      nomlink4: "Saludos", dirlink4: "/teoria/nivel1/saludos",
+      nomlink5: "Saludos", dirlink5: "/teoria/nivel1/saludos",
       // Puedes agregar nomlink3, dirlink3, hasta el 5 según necesites
     },
     {

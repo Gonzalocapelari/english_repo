@@ -11,11 +11,13 @@ switch(dir){
         break;
                 case 3: router.push("/practica/");
                 break;
-                        case 4: router.push("/");
+                        case 4: router.push("/extra/");
                         break;
+                                case 5: router.push("7")
 }
 }
     return(
+        /* Aclaracion, normalmente se usa <nav> combinado con una <ul> y <a> con hrefs pero no sabía y lo hice con un div y botones */
         <div className="header">
             <section className="burger"><div className="barra"></div>
             <div style={{height: "2px"}}/>
@@ -29,7 +31,9 @@ switch(dir){
                 <div style={{height: "6px"}}/>
                 <li><button className="botonHEAD " onClick={() => ira(3)}>Practica</button></li>
                 <div style={{height: "6px"}}/>
-                <li><button className="botonHEAD" onClick={() => ira(4)}>Sobre mi</button></li>
+                <li><button className="botonHEAD" onClick={() => ira(4)}>Extra</button></li>
+                <div style={{height: "6px"}}/>
+                <li><button className="botonHEAD" onClick={() => ira(5)}>Sobre mi</button></li>
                 </ul>
         </div>
     );

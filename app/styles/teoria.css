@@ -1,8 +1,16 @@
 .mainteoria{
 /*     background-color: rgba(245, 245, 220, 0.175); */
     min-height: 100vh;
-    justify-content: center;
+    background-color: rgb(12, 10, 34);
+}
+
+.ulCampos {
+        justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: rgb(12, 10, 34);
+    list-style: none;
+    padding: 0;
+/*     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 20px; /* Espacio entre las tarjetas */
 }

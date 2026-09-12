@@ -1,51 +1,70 @@
-.campoButton{
-    width: 80px;
-    height: 70px;
-    box-shadow: 15%;
-    background-color: rgba(137, 43, 226, 0.28);
-    border-radius: 15%;
-    /* margin-top: 10px; */
-    /* font-size: 5%; */
-margin-left: 5%;
+/* La tarjeta (Card) */
+.paquete {
+    background-color: rgba(137, 43, 226, 0.08); /* Fondo claro morado */
+    border: 1px solid rgba(137, 43, 226, 0.3); /* Borde sutil */
+    border-radius: 12px; /* Bordes redondeados */
+  /*   padding: 20px; */
+    /* margin-bottom: 20px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de tarjeta */
+    transition: all 0.3s ease-in-out;
+    width: 50%;
+    /* margin-top: 0.5%; */
+/*     margin-left: 20%; */
 }
 
-.campoButton:hover{
-    background-color: rgba(163, 90, 233, 0.28);
+.paquete:hover {
+    background-color: rgba(137, 43, 226, 0.15);
+    box-shadow: 0 6px 12px rgba(137, 43, 226, 0.2);
+    transform: translateY(-3px); /* Pequeña elevación al pasar el mouse */
 }
-.paquete{
-    transition: background-color 0.8 ease-in-out;
-    z-index: -10;
-    margin-top: 10px;
-    
+
+/* El área donde se hace clic */
+.cabecera-tarjeta {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
-.paquete:hover{
-    background-color: rgba(137, 43, 226, 0.28);
+
+/* El Título (Nivel) */
+.campoButton {
+    margin: 0;
+    color: hsl(271, 76%, 53%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
 }
-.desc{
-    margin-left: 0.7%;
-    display: inline-block;
-    color:rgb(159, 105, 173);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight:bold;
-    font-size:large;
-/*     font-style:normal; */
+
+/* La descripción */
+.desc {
+    margin: 0;
+    color: rgb(120, 80, 130);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
+
+/* La lista desplegable */
 .claseLista {
-margin-left: 15%;
-animation: claseLista 1.8s;
-/* color: rgb(87, 53, 223); */
-
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(137, 43, 226, 0.2); /* Línea divisoria */
+    list-style: none;
+    padding-left: 0;
+    animation: mostrarLista 0.4s ease-in-out;
 }
 
-@keyframes claseLista {
-    from{
-opacity: 0%;
-    }
-    50% {
-opacity: 80%
+.claseLista li {
+    margin-bottom: 10px;
+}
+
+@keyframes mostrarLista {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Cae ligeramente */
     }
     to {
-opacity: 100%;
+        opacity: 1;
+        transform: translateY(0);
     }
-    
 }

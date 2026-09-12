@@ -1,13 +1,21 @@
 .atrasButton{
-    width: 50px;
-    height: 50px;
-    box-shadow: 15%;
-    background-color: rgb(137, 43, 226, 0.28);
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 6%;
+    background-color: rgba(137, 43, 226, 0.08); /* Fondo claro morado */
+    border: 1px solid rgba(137, 43, 226, 0.3); /* Borde sutil */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de tarjeta */
+    transition: all 0.3s ease-in-out;
+    color:hsl(271, 76%, 53%);
+    font-size: 20;
+    width: 50%;
+        justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .atrasButton:hover{
-    background-color: rgba(105, 168, 223, 0.493);
+       background-color: rgba(137, 43, 226, 0.15);
+    box-shadow: 0 6px 12px rgba(137, 43, 226, 0.2);
+    transform: translateY(-3px);
 }

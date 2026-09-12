@@ -19,8 +19,8 @@ export default function Botonatras({ path }: propOpcional) {
     }
 
     return (
-        <button className='atrasButton' onClick={goBack}>
+        <div style={{ display: 'flex', justifyContent: 'center' }}><button className='atrasButton' onClick={goBack}>
             {caracter}
-        </button>
+        </button></div>
     );
 }
