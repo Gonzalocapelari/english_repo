@@ -1,0 +1,65 @@
+.header {
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0, 136, 255);
+    display: flex; 
+    position: relative;
+    z-index: 10;
+}
+.burger{
+    position: relative;
+    row-gap: 10px;
+    gap:10%;
+    padding-top: 10px;
+    padding-left: 35px;
+
+    transition: opacity 0.5s ease-in-out;
+}
+
+.barra{
+    height: 3px;
+    width: 20;
+    background-color: white;
+    position: relative;
+
+}
+.listaHeader {
+    padding-left: 10px;
+    position: absolute;
+    top: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    gap: 10px;
+    
+    /* Configuración de la animación */
+    display: flex;
+    opacity: 0; 
+    visibility: hidden; 
+    transform: translateY(-15px); /* Empieza desplazado hacia arriba */
+    transition: all 0.4s ease-in-out; /* Duración y curva de la animación */
+}
+
+.header:hover .listaHeader {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Cae a su posición original */
+}
+.header:hover .burger{
+    opacity: 0;
+}
+.botonHEAD {
+    position: relative;
+    width: 100px;
+    background-color: rgba(12, 10, 34, 0.342);
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.botonHEAD:hover {
+    background-color: rgba(0, 136, 255);
+}
