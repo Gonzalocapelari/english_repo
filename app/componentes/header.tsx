@@ -20,11 +20,11 @@ switch(dir){
         /* Aclaracion, normalmente se usa <nav> combinado con una <ul> y <a> con hrefs pero no sabía y lo hice con un div y botones */
         <div className="header">
             <section className="burger"><div className="barra"></div>
-            <div style={{height: "2px"}}/>
+            {/* <div style={{height: "2px"}}/>
             <div className="barra"></div>
             <div style={{height: "2px"}}/>
-            <div className="barra"></div></section>
-            <ul className="listaHeader">
+            <div className="barra"></div> */}
+</section>            <ul className="listaHeader">
                 <li><button className="botonHEAD" onClick={() => ira(1)}>Inicio</button></li>
                 <div style={{height: "6px"}}/>
                 <li><button className="botonHEAD" onClick={() => ira(2)}>Teoria</button></li>
