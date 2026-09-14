@@ -1,0 +1,71 @@
+.ejercicio.neutro {
+    width: 100%;
+    min-height: 200px; /* Cambiado a min-height para que crezca si hay más texto */
+    background: linear-gradient(135deg, #3a1c71, #d76d77); /* Degradado morado a rosado */
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Sombra para dar profundidad */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.buttonRespuesta {
+    width: 120px;
+    padding: 10px;
+    background-color: #6a2c91;
+    color: white;
+    border: none; /* Sin borde negro para un look más limpio */
+    z-index: 10;
+    border-radius: 8px; /* Faltaban los píxeles */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.buttonRespuesta:hover {
+    background-color: #9d4edd;
+    transform: translateY(-3px); /* El botón se eleva al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(157, 78, 221, 0.4); /* Resplandor morado */
+}
+
+.enunciado {
+    font-weight: bold;
+    color: #ffffff; /* Letra blanca para contrastar con el fondo oscuro */
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sutil sombra en el texto */
+    text-align: center;
+}
+
+/* Cuando la respuesta es correcta (Verde) */
+.ejercicio.correcto {
+    background: linear-gradient(135deg, #2e7d32, #4caf50); 
+    box-shadow: 0 8px 16px rgba(76, 175, 80, 0.4);
+        width: 100%;
+    min-height: 200px; /* Cambiado a min-height para que crezca si hay más texto */
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Cuando la respuesta es incorrecta (Rojo) */
+.ejercicio.incorrecto {
+    background: linear-gradient(135deg, #c62828, #f44336); 
+    box-shadow: 0 8px 16px rgba(244, 67, 54, 0.4);
+            width: 100%;
+    min-height: 200px; /* Cambiado a min-height para que crezca si hay más texto */
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}

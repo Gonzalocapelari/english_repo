@@ -15,7 +15,6 @@ export default function Teoria() {
       nomlink3: "presente simple", dirlink3: "/teoria/nivel1/presentesimple",
       nomlink4: "Saludos", dirlink4: "/teoria/nivel1/saludos",
       nomlink5: "Saludos", dirlink5: "/teoria/nivel1/saludos",
-      // Puedes agregar nomlink3, dirlink3, hasta el 5 según necesites
     },
     {
       recurso: "Nivel 2 (A1)",
