@@ -92,7 +92,7 @@ english_repo/
 | `postcss.config.mjs` | Registra `@tailwindcss/postcss`. | Tailwind 4 se integra como plugin de PostCSS. |
 | `.gitignore` | Ignora `node_modules`, `.next`, `.env*`, `next-env.d.ts`, etc. | Evita versionar dependencias, builds y secretos. |
 | `AGENTS.md` / `CLAUDE.md` | Los genera `next dev`. Piden a los asistentes de IA consultar la documentación incluida en `node_modules/next/dist/docs/` antes de escribir código. `CLAUDE.md` solo contiene `@AGENTS.md`. | Esta versión de Next tiene cambios respecto a versiones anteriores; el archivo evita que un asistente use APIs desactualizadas. |
-| `README.md` | Texto por defecto de `create-next-app`. | Sin personalizar. |
+| `README.md` | Texto de documentacion generado por Claude Code tras analizar el proyecto. | personalizado. |
 
 ---
 
