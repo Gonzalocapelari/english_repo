@@ -7,7 +7,7 @@ export default function ContextualQuote({ text, source, highlights }: QuoteData)
   // The parentheses inside the regex tell .split() to keep the matched
   // separator (the whitespace) as its own item in the resulting array,
   // instead of throwing it away.
-  const tokens = text.split(/(\s+)/);
+  const everyWord = text.split(/(\s+)/);
 
   // STEP 2 — turn the "highlights" array into a Map for fast lookups.
   // A Map lets us ask "is this word highlighted?" instantly, instead of
@@ -18,9 +18,9 @@ export default function ContextualQuote({ text, source, highlights }: QuoteData)
   );
 
   return (
-    <blockquote className={styles.quote}>
+    <div className=""><blockquote className={styles.quote}>
       <p className={styles.text}>
-        {tokens.map((token, index) => {
+        {everyWord.map((token, index) => {
           // Strip common punctuation before checking the map, so a word
           // followed by a comma or period (e.g. "Ministry,") still matches.
           const cleanWord = token.toLowerCase().replace(/[.,!?;:"']/g, "");
@@ -35,6 +35,7 @@ export default function ContextualQuote({ text, source, highlights }: QuoteData)
           // tabIndex={0} lets keyboard users "Tab" onto the word too,
           // not just hover it with a mouse.
           return (
+
             <span key={index} className={styles.keyword} tabIndex={0}>
               {token}
               <span className={styles.tooltip} role="tooltip">
@@ -45,6 +46,5 @@ export default function ContextualQuote({ text, source, highlights }: QuoteData)
         })}
       </p>
       <footer className={styles.source}>— {source}</footer>
-    </blockquote>
-  );
+    </blockquote><div className="h-2 w-full bg-blue-500"></div></div>);
 }
