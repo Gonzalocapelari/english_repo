@@ -10,10 +10,10 @@
     position: relative;
     row-gap: 10px;
     gap:10%;
-    padding-top: 25px;
+    padding-top: 30px;
     left: 15px;
-    width: 60px;
-    transition: opacity 0.5s ease-in-out;
+    width: 139px;
+    transition: opacity 0.4s ease-in-out;
     background-size: cover;
     background-image: url('../recursos/logo_englishrepo.png'); 
 }
@@ -49,7 +49,7 @@
     transform: translateY(0); /* Cae a su posición original */
 }
 .header:hover .burger{
-    opacity: 0;
+    opacity: 0.5;
 }
 .botonHEAD {
     position: relative;
