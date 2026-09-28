@@ -1,0 +1,21 @@
+.extraBackground {
+    min-height: 100vh;
+    background-color: rgb(12, 10, 34);
+}
+
+.centerer {
+    /* 1. This enables flexbox (required for justify/align to work) */
+    display: flex; 
+    
+    /* 2. Centers horizontally */
+    justify-content: center; 
+    
+    /* 3. Centers vertically */
+    align-items: center; 
+    
+    /* 4. Forces components to stack vertically (instead of side-by-side) */
+    flex-direction: column; 
+    
+    /* 5. Gives the container the full screen height so vertical centering works */
+    min-height: 100vh; 
+}

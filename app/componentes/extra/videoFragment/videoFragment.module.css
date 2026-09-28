@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 360px;
+  padding: 16px;
+  border-radius: 12px;
+  /* same translucent purple used for cards elsewhere in the app (campo.css) */
+  background: rgba(137, 43, 226, 0.08);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.toggleButton {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(271, 73%, 26%);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggleButton:hover {
+  background-color: hsl(271, 55%, 47%);
+}
+
+.translation {
+  margin: 0;
+  color: #ededed;
+  font-style: italic;
+}

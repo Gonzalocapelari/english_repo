@@ -1,0 +1,61 @@
+.quote {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-left: 4px solid hsl(271, 76%, 53%);
+  background: rgba(137, 43, 226, 0.08);
+  border-radius: 0 12px 12px 0;
+}
+
+.text {
+  margin: 0;
+  color: #ededed;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.source {
+  margin-top: 12px;
+  text-align: right;
+  color: #a385c9;
+  font-style: italic;
+}
+
+/* The word itself: a dashed underline is a common visual hint meaning
+   "hover me, there's more information here". */
+.keyword {
+  position: relative; /* anchors the tooltip below, which uses position: absolute */
+  border-bottom: 1px dashed hsl(271, 76%, 53%);
+  cursor: help;
+}
+
+/* Hidden by default. We animate "opacity" instead of toggling "display",
+   so the tooltip fades in smoothly instead of popping in abruptly. */
+.tooltip {
+  position: absolute;
+  bottom: 125%; /* sits just above the word */
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 220px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: hsl(271, 73%, 16%);
+  color: white;
+  font-size: 0.85rem;
+  font-style: normal;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  pointer-events: none; /* the tooltip never blocks clicks/hovers itself */
+  z-index: 10;
+}
+
+/* Show the tooltip both on mouse hover AND on keyboard focus, so
+   keyboard-only users can reach the extra context too. */
+.keyword:hover .tooltip,
+.keyword:focus-visible .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
