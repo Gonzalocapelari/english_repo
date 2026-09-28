@@ -1,0 +1,173 @@
+/* =========================================
+   Contenedor Principal y Textos Base
+========================================= */
+.BACKGROUND {
+  background: radial-gradient(circle, rgb(40, 35, 75) 0%, rgb(12, 10, 34) 100%);
+  color: #e2e1f2; /* Gris muy claro para lectura cómoda */
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+/* Limitar el ancho para que sea minimalista y fácil de leer */
+.BACKGROUND > * {
+  max-width: 700px;
+  width: 100%;
+}
+
+h2, h3 {
+  color: #ffffff; /* Blanco puro para títulos */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+/* =========================================
+   Secciones (Estilo Tarjeta Transparente)
+========================================= */
+.about__section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Interactividad: Efecto de elevación al pasar el mouse */
+.about__section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* =========================================
+   The Deal (Listas You get / You don't get)
+========================================= */
+.about__deal {
+  display: flex;
+  gap: 2rem;
+}
+
+.about__deal > div {
+  flex: 1;
+}
+
+.about__deal ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about__deal li {
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+/* Interactividad en los items */
+.about__deal li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+/* Indicadores visuales sutiles */
+.about__deal > div:first-child li {
+  border-left: 3px solid #4ecdc4; /* Verde agua para "Yes" */
+}
+
+.about__no li {
+  border-left: 3px solid #ff6b6b; /* Rojo suave para "No" */
+  opacity: 0.8;
+}
+
+/* =========================================
+   FAQ (Acordeón Interactivo)
+========================================= */
+.about__faq details {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+.about__faq summary {
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: #ffffff;
+  list-style: none; /* Oculta la flecha por defecto */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.about__faq summary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+/* Flecha personalizada animada */
+.about__faq summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.about__faq details[open] summary::after {
+  transform: rotate(45deg); /* Cambia el + a una x */
+}
+
+.about__faq details p {
+  padding: 0 1rem 1rem 1rem;
+  margin: 0;
+  color: #c4c3d0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   Footer y Firma
+========================================= */
+.about__footer {
+  text-align: center;
+  margin-top: 3rem;
+  opacity: 0.8;
+}
+
+.about__sign {
+  font-family: 'Brush Script MT', 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+/* =========================================
+   Responsive (Celulares)
+========================================= */
+@media (max-width: 600px) {
+  .about__deal {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -10,11 +10,11 @@ export default function Inicio() {
     <main className="mainprincipal">      <h1 className='titulo'>-EnglishRepo-</h1>
 <div className='claseMain'>
 
-<Categoria t="Teoria" path="/teoria" />
+<Categoria t="Grammar" path="/teoria" />
 <div className= "separador"/>
-<Categoria t="Practica" path= "/practica" />
+<Categoria t="Exercises" path= "/practica" />
 <div className= "separador"/>
-<Categoria t="EXTRA" path="/extra" />
+<Categoria t="Extra" path="/extra" />
 </div>
 <div className='centrarOjos'>
 <Ojos/>

@@ -7,13 +7,13 @@ function ira(dir:number){
 switch(dir){
     case 1: router.push("/");
     break;
-        case 2: router.push("/teoria/");
+        case 2: router.push("/teoria");
         break;
-                case 3: router.push("/practica/");
+                case 3: router.push("/practica");
                 break;
-                        case 4: router.push("/extra/");
+                        case 4: router.push("/extra");
                         break;
-                                case 5: router.push("7")
+                                case 5: router.push("/aboutMe")
 }
 }
     return(
@@ -25,15 +25,15 @@ switch(dir){
             <div style={{height: "2px"}}/>
             <div className="barra"></div> */}
 </section>            <ul className="listaHeader">
-                <li><button className="botonHEAD" onClick={() => ira(1)}>Inicio</button></li>
+                <li><button className="botonHEAD" onClick={() => ira(1)}>Home</button></li>
                 <div style={{height: "6px"}}/>
-                <li><button className="botonHEAD" onClick={() => ira(2)}>Teoria</button></li>
+                <li><button className="botonHEAD" onClick={() => ira(2)}>Gammar</button></li>
                 <div style={{height: "6px"}}/>
-                <li><button className="botonHEAD " onClick={() => ira(3)}>Practica</button></li>
+                <li><button className="botonHEAD " onClick={() => ira(3)}>Exercises</button></li>
                 <div style={{height: "6px"}}/>
                 <li><button className="botonHEAD" onClick={() => ira(4)}>Extra</button></li>
                 <div style={{height: "6px"}}/>
-                <li><button className="botonHEAD" onClick={() => ira(5)}>Sobre mi</button></li>
+                <li><button className="botonHEAD" onClick={() => ira(5)}>About me</button></li>
                 </ul>
         </div>
     );
