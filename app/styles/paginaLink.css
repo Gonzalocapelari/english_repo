@@ -1,63 +1,137 @@
-main {
+/* Importamos una fuente altamente legible (opcional, si usas Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+.alignLeft {
+    min-height: 100vh; /* Recupera la altura completa de la pantalla */
+    background-color: rgb(12, 10, 34); /* Recupera tu color de fondo original */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 60px 40px;
+    font-family: 'Inter', system-ui, sans-serif;
+    width: 100%;
+    box-sizing: border-box; /* Evita que el padding ensanche la página de más */
+}
+
+.titleLeft {
+    font-weight: 800;
+    color: hsl(271, 76%, 53%);
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+    text-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+}
+.contenidoTexto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Separación entre el subtítulo y el texto */
+}
+
+.subtituloSeccion {
+    color: hsl(271, 76%, 75%); /* Un violeta más claro que el título principal */
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria sutil */
+    text-align: left;
+}
+
+/* main {
     min-height: 100vh; 
     background-color: rgb(12, 10, 34);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
+    align-items: flex-start; 
+    padding: 60px 40px;
 
-h1 {
-    font-weight: bold;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+} */
+
+/* h1 {
+    font-weight: 800;
     color: hsl(271, 76%, 53%);
-    text-align: center;
-    margin-bottom: 40px;
-}
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+    text-shadow: 0 4px 15px rgba(138, 43, 226, 0.3); 
+} */
 
-.granContenedor {
+.greatContainer {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    width: 90%;
-    max-width: 1000px;
+    align-items: flex-start; /* CHANGED: Ensures all blocks inside align left uniformly */
+    gap: 30px;
+    width: 100%;
+    max-width: 800px; /* Ancho ideal para la lectura (evita líneas de texto eternas) */
 }
 
+/* Efecto de tarjeta moderna para cada bloque */
 .bloqueSeccion {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.03); /* Fondo semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%; /* Ensures all cards stretch to uniform width */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Aplicando inline-flex para colocar imagen y texto lado a lado */
+/* Efecto hover: se levanta ligeramente e ilumina los bordes */
+.bloqueSeccion:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-color: rgba(138, 43, 226, 0.5); 
+}
+
 .teoriaYTexto {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    width: 150%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
 }
 
 .imagenTeoria {
     width: 50%;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .paragraph {
-    width: 25%;
-    color: white;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0; /* Evita que los márgenes por defecto rompan el inline-flex */
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9); /* Blanco ligeramente apagado para no cansar la vista */
+    font-size: 1.1rem;
+    line-height: 1.7; /* El interlineado amplio es clave para leer en pantalla */
+    margin: 0; 
+    white-space: pre-wrap; /* Respeta los saltos de línea de tus strings */
+    text-align: left;
 }
 
-.ejercicioComplementario, .anotaciones {
-    border-radius: 10px;
-    padding: 20px;
-}
-
-/* .ejercicioComplementario {
-    background-color: #2196F3;
-}
- */
+/* Notas finales con estilo de cita / bloque destacado */
 .anotaciones {
-    background-color: #707d88;
+    background-color: rgba(112, 125, 136, 0.15); /* Mantiene tu color pero con transparencia */
+    border-left: 6px solid #707d88;
+    border-radius: 8px;
+    padding: 25px 30px;
+    color: #dec552;
+    width: 100%; /* Ensure it matches the width of other blocks */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.anotaciones h3 {
+    margin-top: 0;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.anotaciones p {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    margin: 0;
 }

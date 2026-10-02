@@ -102,7 +102,7 @@ highlights: [
       {
         word: "Cloak",
         context:
-          "A cloak is a long, loose, sleeveless outer garment that hangs from the shoulders and fastens at the neck",
+          "A cloak is a long, loose, sleeveless outer garment that hangs from the shoulders and fastens at the neck (What's in superman's back)",
       },
       {
         word: "sneak",
