@@ -38,11 +38,12 @@ border: 2px solid transparent;
 }
 .titulo {
   margin-top: 6%;
+  width: fit-content;        /* Shrinks the element to exactly fit the text */
+  margin-inline: auto;       /* Centers the element horizontally */
   font-weight: bold;
   color: hsl(271, 61%, 51%);
   text-align: center;
   text-decoration-style: solid;
-  /* Transición suave al quitar el cursor */
   transition: color 0s ease; 
 }
 
@@ -66,13 +67,6 @@ border: 2px solid transparent;
   align-content: center;
   display: flex;
   margin-top: 6%;
-}
-
-.centrarOjos{
-  display: flex;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
 }
 
 .mainprincipal{

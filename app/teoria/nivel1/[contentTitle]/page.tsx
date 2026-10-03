@@ -265,7 +265,7 @@ We form the present continuous affirmative with the correct form of the verb 'be
             subtitle: "Questions & Short answers",
             text: `Questions:
 - Am I talking?
-- Are you / we / they talking?
+- Are you / we / the~y talking?
 - Is he / she / it talking?
 
 Short answers:
@@ -276,48 +276,7 @@ Short answers:
 'Is he having lunch?' 
 'Yes, he is.' (NOT Yes, he's)`
     },
-"simplevscontinuous": {
-        title: "Present Simple vs. Present Continuous",
-        content1: {
-            subtitle: "Usage differences",
-            text: `We use the [present simple] to talk about habits, daily routines, opinions, facts and general truths.
-We use the [present continuous] to talk about things that are happening now or around now.
 
-Example:
-- I wear school uniform from Monday to Friday, but TODAY I'm wearing jeans because it's Saturday.
-                    +   (present simple)                                             +    (present continous)`
-        },
-        content2: {
-            subtitle: "Time expressions",
-            text: `We use the two tenses with different adverbs and time expressions.
-
-Present simple:
-- adverbs of frequency (always, never, sometimes, often, etc.)
-- once/twice/three times a day/week/month/year
-- every morning/day/week/month/summer/year
-- on Tuesdays / school days
-
-Present continuous:
-- (right) now
-- at the moment
-- today
-- this morning/week/month/year
-- these days`
-        },
-        content3: {
-            subtitle: "Dynamic and stative verbs",
-            text: `Dynamic verbs describe actions: walk, play, sing, eat, etc. We can use dynamic verbs in the present simple and continuous (e.g., I usually have sandwiches for lunch, but today I'm having pizza).
-
-Stative verbs describe states, opinions, or possession: be, think, want, prefer, like, love, hate, understand, believe, agree, know, have got, need, own, belong, etc. We don't normally use stative verbs in continuous tenses.
-- I'm not playing because I don't like this game. (NOT I'm not liking this game)`
-        },
-        content4: {
-            subtitle: "",
-            text: ""
-        },
-        finalNotes: `• Tip for tenses: Always look for "time clues" in the sentence! Words like "every day" or "always" act as red flags for the Present Simple, while "right now" or "at the moment" signal the Present Continuous.
-• Tip for verbs: Be careful with verbs that can be both dynamic AND stative depending on their meaning. For example, "have" is stative for possession ("I have a car") but dynamic for actions ("I am having lunch").`
-    },
 };
 
 export default async function PaginaDinamica({ params }: { params: Promise<{ contentTitle: string }> }) {

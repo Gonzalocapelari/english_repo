@@ -1,32 +1,39 @@
+.centrarOjos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px; 
+}
+
 .globo {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: white;
   border: 2px solid black;
-  border-radius: 50%; /* Convierte el div en un círculo */
-  
-  /* Centra la pupila vertical y horizontalmente */
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
-  content: absolute;
-  /* Margen opcional para separarlo de los bordes de la pantalla */
+  position: relative; 
   margin-top: 50px; 
+  transition: transform 0.1s ease; 
+  cursor: pointer;
+}
+
+.globo:active {
+  transform: scaleY(0.0);
 }
 
 .pupila {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   background-color: black;
-  border-radius: 50%; /* Convierte el div en un círculo */
-  
-  /* Para que el movimiento sea un poco más suave */
+  border-radius: 50%; 
   transition: transform 0.05s linear;
 }
-.caja{
-padding-inline: 10px;
 
+.caja {
+  padding-inline: 10px;
   display: inline-flex;
-    top: 200px;
-
+  top: 200px;
 }
