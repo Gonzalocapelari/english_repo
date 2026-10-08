@@ -25,17 +25,17 @@ export const quotes: QuoteData[] = [
 Guns, and named her the Queen Ann’s Revenge; and
 cruising near the Island of St. Vincent, took a large
 Ship, called the Great Allen, Christopher Taylor Commander;
-the Pyrates plundered her of what they
+the Pirates plundered her of what they
 though fit, put all the Men ashore upon the Island
 above mentioned, and then set Fire to the Ship.
 A few Days after, Teach fell in with the Scarborogh
 Man of War, of 30 Guns, who engaged
-him for some Hours; but she finding the Pyrate
+him for some Hours; but she finding the Pirate
 well mann’d, and having tried her strength, gave
 over the Engagement, and returned to Barbadoes,
 the Place of her Station; and Teach sailed towards
 the Spanish America.
-In his Way he met with a Pyrate Sloop of ten
+In his Way he met with a Pirate Sloop of ten
 Guns, commanded by one Major Bonnet, lately a
 Gentleman of good Reputation and Estate in the
 Island of Barbadoes, whom he joyned; but in a few
@@ -48,7 +48,7 @@ been used to the Fatigues and Care of such a Post, it would
 be better for him to decline it, and live easy and at his Pleasure,
 in such a Ship as his, where he should not be obliged to
 perform Duty, but follow his own Inclinations.`,
-source: "Captain Black Beard chapter IV from A general story of pyrates",
+source: "Captain Black Beard chapter IV from A general story of pirates",
 highlights: [
   {
     word: "Guiney",
