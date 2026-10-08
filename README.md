@@ -75,7 +75,7 @@ Install the [**Definer**](https://lumetrium.com/definer) browser extension. Doub
 
 ```bash
 # 1. Clone the repo
-git clone <your-repo-url>
+git clone https://github.com/Gonzalocapelari/english_repo
 cd english_repo
 
 # 2. Install dependencies
@@ -85,7 +85,7 @@ npm install
 npm run dev
 ```
 
-Then open **http://localhost:3000** and start learning.
+Then open **http://localhost:3000** and you will see the whole thing.
 
 ### Tech stack
 
